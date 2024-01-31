@@ -24,6 +24,7 @@ const router = createBrowserRouter(
       <Route path='' element={<Landing />} />
       <Route path='dashboard' element={<Dashboard />} />
       <Route path='collab' element={<Collab />} />
+      <Route path='*' element={<div>Not found</div>} />
     </Route>
   )
 );
