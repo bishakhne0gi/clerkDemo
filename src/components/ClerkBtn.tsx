@@ -1,4 +1,3 @@
-import React from "react";
 import { Button } from "@/components/ui/button";
 import { SignInButton, SignedOut } from "@clerk/clerk-react";
 

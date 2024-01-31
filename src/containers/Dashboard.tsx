@@ -1,7 +1,7 @@
-import { UserButton, useUser } from "@clerk/clerk-react";
+import { useUser } from "@clerk/clerk-react";
 
 const Dashboard = () => {
-  const { isSignedIn, user, isLoaded } = useUser();
+  const { user } = useUser();
 
   // const email = user?.primaryEmailAddress?.emailAddress;
   const name = user?.fullName;

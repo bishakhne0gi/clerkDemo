@@ -1,16 +1,14 @@
-import App from "./App.tsx";
 import "./App.css";
 import { ThemeProvider } from "./components/theme-provider.tsx";
 import { ClerkProvider } from "@clerk/clerk-react";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import {
-  BrowserRouter,
   RouterProvider,
   createBrowserRouter,
   createRoutesFromElements,
 } from "react-router-dom";
-import { Route, Routes } from "react-router-dom";
+import { Route } from "react-router-dom";
 import { Landing, Dashboard, Collab } from "./containers";
 import Layout from "./Layout.tsx";
 
