@@ -25,7 +25,7 @@ const Navbar = () => {
           {user ? (
             <>
               <NavLink to='dashboard'>
-                <span className='text-[#ACACAC] hover:text-[#3f3f3f]'>
+                <span className='text-[#ACACAC] hover:text-[#3f3f3f] sm:hidden'>
                   {email}
                 </span>
               </NavLink>

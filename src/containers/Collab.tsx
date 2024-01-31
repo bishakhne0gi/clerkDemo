@@ -7,9 +7,9 @@ const Collab = () => {
     <Card className='w-auto h-auto border-none shadow-none'>
       <Tabs
         defaultValue='campus-ambassador'
-        className='w-auto border-none shadow-none font-general px-[56px]'
+        className='w-auto border-none shadow-none font-general px-[56px] sm:px-[10px] sm:items-center sm:justify-center'
       >
-        <TabsList className='grid grid-cols-2 w-[480px] border-none shadow-none px-[76px]'>
+        <TabsList className='grid grid-cols-2 w-[480px] border-none shadow-none px-[76px] sm:px-[0px] sm:w-[380px] sm:items-center'>
           <TabsTrigger value='campus-ambassador'>Campus Ambassador</TabsTrigger>
           <TabsTrigger value='community'>Community Partner</TabsTrigger>
         </TabsList>
