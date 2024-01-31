@@ -6,7 +6,7 @@ const ClerkBtn = () => {
     <>
       <SignedOut>
         <Button variant='outline'>
-          <SignInButton />
+          <SignInButton afterSignInUrl='/dashboard' />
         </Button>
       </SignedOut>
     </>
