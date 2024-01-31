@@ -11,12 +11,12 @@ const Community = () => {
       {" "}
       {/* Left Top 1. Description Bottom 1. Input Name 2. Input Contact No. Right
 Full 1. */}
-      <Card className='flex h-auto w-full flex-row border-none shadow-none font-general '>
+      <Card className='flex h-auto w-full flex-row border-none shadow-none font-general sm:flex-col'>
         {/* Left */}
-        <Card className='flex basis-1/2 py-[48px] flex-col border-none shadow-none'>
-          <Card className='flex basis-1/2 justify-center px-[45px] py-[79px] flex-col border-none shadow-none'>
+        <Card className='flex basis-1/2 py-[48px] flex-col border-none shadow-none sm:py-[0px]'>
+          <Card className='flex basis-1/2 justify-center px-[45px] py-[79px] flex-col border-none shadow-none sm:px-[0px] sm:p-0'>
             <span className='text-[#ACACAC]'>join as</span>
-            <h1 className=' mt-[16px] mb-[32px] font-bold font-abc text-[60px]'>
+            <h1 className=' mt-[16px] mb-[32px] font-bold font-abc text-[60px] sm:mt-[0px]'>
               COMMUNITY PARTNER
             </h1>
             <span className='text-[#ACACAC]'>
@@ -48,7 +48,7 @@ Full 1. */}
         </Card>
 
         {/* Right */}
-        <Card className='flex basis-1/2 py-[48px] px-[56px] flex-col border-none shadow-none'>
+        <Card className='flex basis-1/2 py-[48px] px-[56px] flex-col border-none shadow-none sm:px-[0px] sm:py-0'>
           <CardContent className='grid gap-4 text-[#ACACAC]'>
             <div className='grid gap-2'>
               <Label>Email ID of POC</Label>
