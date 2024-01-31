@@ -5,7 +5,7 @@ const ClerkBtn = () => {
   return (
     <>
       <SignedOut>
-        <Button variant='outline'>
+        <Button variant='outline' asChild={true}>
           <SignInButton redirectUrl='/dashboard' />
         </Button>
       </SignedOut>
