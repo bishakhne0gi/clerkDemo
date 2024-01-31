@@ -22,8 +22,8 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout />}>
       <Route path='' element={<Landing />} />
-      <Route path='/dashboard' element={<Dashboard />} />
-      <Route path='/collab' element={<Collab />} />
+      <Route path='dashboard' element={<Dashboard />} />
+      <Route path='collab' element={<Collab />} />
     </Route>
   )
 );
