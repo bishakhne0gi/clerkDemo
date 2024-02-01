@@ -1,6 +1,8 @@
 import { Card } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { CampusAmbassador, Community } from ".";
+import { Toast } from "@radix-ui/react-toast";
+import { Toaster } from "@/components/ui/toaster";
 
 const Collab = () => {
   return (
@@ -14,7 +16,7 @@ const Collab = () => {
           <TabsTrigger value='community'>Community Partner</TabsTrigger>
         </TabsList>
         <TabsContent value='campus-ambassador'>
-          <Card className='flex w-full border-0 shadow-none rounded-none'>
+          <Card className='flex w-[100%] border-0 shadow-none rounded-none'>
             <CampusAmbassador />
           </Card>
         </TabsContent>
@@ -24,6 +26,7 @@ const Collab = () => {
           </Card>
         </TabsContent>
       </Tabs>
+      <Toaster />
     </Card>
   );
 };

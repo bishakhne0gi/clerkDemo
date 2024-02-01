@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Toaster } from "@/components/ui/toaster";
 import { useToast } from "@/components/ui/use-toast";
 import { Label } from "@radix-ui/react-dropdown-menu";
 import { ToastAction } from "@radix-ui/react-toast";
@@ -20,7 +19,18 @@ const CampusAmbassador = () => {
     twitter: "",
     no_of_regs: 0,
   });
-
+  const resetFormData = () => {
+    setFormData({
+      name: "",
+      email: "",
+      college: "",
+      contact: "",
+      description: "",
+      linkedin: "",
+      twitter: "",
+      no_of_regs: 0,
+    });
+  };
   const handleInputChange = (e: { target: { id: any; value: any } }) => {
     const { id, value } = e.target;
     setFormData((prevData) => ({
@@ -54,12 +64,21 @@ const CampusAmbassador = () => {
         console.log("Data successfully sent to the API");
         toast({
           title: "Successfull submitted",
+          description: `${formData.email} mail is sent`,
         });
+        resetFormData();
       } else {
         console.error("Error sending data to the API");
+        resetFormData();
         toast({
           variant: "destructive",
           title: "Form Not Submitted!!",
+          description: "There was a problem with your request.",
+          action: <ToastAction altText='Try again'>Try again</ToastAction>,
+        });
+        toast({
+          variant: "destructive",
+          title: "Form Nottttii Submitted!!",
           description: "There was a problem with your request.",
           action: <ToastAction altText='Try again'>Try again</ToastAction>,
         });
@@ -122,7 +141,7 @@ const CampusAmbassador = () => {
         </Card>
 
         {/* Right */}
-        <Card className='flex basis-1/2 py-[48px] px-[56px] flex-col border-none shadow-none sm:px-[0px] py-0'>
+        <Card className='flex basis-1/2 py-[48px] px-[56px] flex-col border-none shadow-none sm:px-[0px] sm:py-0'>
           <CardContent className='grid gap-4 text-[#ACACAC]'>
             <div className='grid gap-2'>
               <Label>College Name</Label>
@@ -201,10 +220,10 @@ const CampusAmbassador = () => {
             >
               Save
             </Button>
-            <Toaster />
           </CardFooter>
         </Card>
       </Card>
+      {/* <Toaster /> */}
     </>
   );
 };
