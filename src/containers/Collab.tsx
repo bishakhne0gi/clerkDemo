@@ -1,7 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { CampusAmbassador, Community } from ".";
-import { Toast } from "@radix-ui/react-toast";
 import { Toaster } from "@/components/ui/toaster";
 
 const Collab = () => {
