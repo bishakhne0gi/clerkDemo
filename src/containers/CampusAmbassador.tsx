@@ -76,12 +76,6 @@ const CampusAmbassador = () => {
           description: "There was a problem with your request.",
           action: <ToastAction altText='Try again'>Try again</ToastAction>,
         });
-        toast({
-          variant: "destructive",
-          title: "Form Nottttii Submitted!!",
-          description: "There was a problem with your request.",
-          action: <ToastAction altText='Try again'>Try again</ToastAction>,
-        });
       }
     } catch (error) {
       console.error("Error:", error);
