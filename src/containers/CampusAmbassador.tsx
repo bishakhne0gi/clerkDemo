@@ -17,7 +17,6 @@ const CampusAmbassador = () => {
     description: "",
     linkedin: "",
     twitter: "",
-    no_of_regs: 0,
   });
   const resetFormData = () => {
     setFormData({
@@ -28,7 +27,6 @@ const CampusAmbassador = () => {
       description: "",
       linkedin: "",
       twitter: "",
-      no_of_regs: 0,
     });
   };
   const handleInputChange = (e: { target: { id: any; value: any } }) => {
@@ -193,17 +191,6 @@ const CampusAmbassador = () => {
                 onChange={handleInputChange}
                 value={formData.twitter}
                 required
-              />
-            </div>
-            <div className='grid gap-2'>
-              <Label>Number of Registration which can be brought</Label>
-              <Input
-                id='no_of_regs'
-                type='number'
-                placeholder='20'
-                className='p-[24px]'
-                onChange={handleInputChange}
-                value={formData.no_of_regs}
               />
             </div>
           </CardContent>
