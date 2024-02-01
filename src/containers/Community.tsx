@@ -28,7 +28,7 @@ const Community = () => {
     });
   };
 
-  const handleInputChange = (e: { target: { id: any; value: any } }) => {
+  const handleInputChange = (e: { target: { id: string; value: string } }) => {
     const { id, value } = e.target;
 
     // Check if the input field is for socials
